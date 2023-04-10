@@ -1,0 +1,49 @@
+* {
+    border: 1px solid black;
+}
+body, html {
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 260px 30px 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 3fr;
+    grid-template-areas: 
+    "sidebar slider header header header"
+    "sidebar slider main main main";
+}
+aside {
+    grid-area: sidebar;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+section.slider {
+    grid-area: slider;
+    display: grid;
+    grid-template-columns: 1fr;
+}
+input.slider-bar {
+  appearance: slider-vertical;
+  margin: auto;
+  padding: 0;
+  max-width: 30px;
+  height: 90vh;
+}
+header {
+    grid-area: header;
+}
+main {
+    grid-area: main;
+}
+div.main-projects-grid {
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+.card {
+    padding: 90px;
+    text-align: center;
+}
