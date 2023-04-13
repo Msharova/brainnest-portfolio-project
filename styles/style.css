@@ -7,6 +7,17 @@
   --blue: #1bb1dc;
   --very-light-blue: #f5f8fd;
   --white: #ffffff;
+  /*
+Color Palette:
+*/
+--accent-black: #17252a;
+--dark-green: #2b7a78;
+--light-green: #3aafa9;
+--lightest-green-white: #def2f1;
+--plain-white: #feffff;
+
+
+
 }
 
 html {
@@ -41,7 +52,5 @@ a {
   color: inherit;
 }
 
-/*
-Color Palette:
 
-*/
+
