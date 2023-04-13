@@ -1,51 +1,47 @@
 * {
-    font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
-body, html {
-    margin: 0;
-    padding: 0;
+
+:root {
+  --dark-blue: #413e66;
+  --blue: #1bb1dc;
+  --very-light-blue: #f5f8fd;
+  --white: #ffffff;
 }
-body {
-    height: 100vh;
+
+html {
+  scroll-behavior:smooth
 }
-aside {
-    grid-area: sidebar;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-section.slider {
-    grid-area: slider;
-    display: grid;
-    grid-template-columns: 1fr;
-}
-input.slider-bar {
-  appearance: slider-vertical;
-  margin: auto;
+
+body,
+html {
+  margin: 0;
   padding: 0;
-  max-width: 30px;
-  height: 90vh;
 }
-header {
-    grid-area: header;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
 }
-main {
-    grid-area: main;
+
+.container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
-div.main-projects-grid {
-    padding: 20px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-gap: 20px;
-}
-.card {
-    padding: 90px;
-    text-align: center;
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 /*
 Color Palette:
-dark blue: #413e66;
-blue: #1bb1dc;
-very light blue: #f5f8fd;
-white: #ffffff;
+
 */
