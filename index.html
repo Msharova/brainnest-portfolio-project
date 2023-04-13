@@ -1,51 +1,311 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./styles/style.css">
-    <title>Portfolio project</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,500,600,700,700i|Montserrat:300,400,500,600,700" rel="stylesheet">
+  <link href="lib/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="lib/animate/animate.min.css" rel="stylesheet">
+  <link href="lib/ionicons/css/ionicons.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./styles/style.css">
+  <title>Portfolio project</title>
 </head>
+
+<style>
+  svg {
+    width: 100px;
+  }
+</style>
+
 <body>
-    <header>
-        <h1>Our amazing team portfolio</h1>
-    </header>
-    <aside>
-        <h2>Maria</h2>
-        <h2>Ben</h2>
-        <h2>Premek</h2>
-        <h2>Chadi</h2>
-    </aside>
-    <section class="slider">
-        <input type="range" min="0" max="3" step="1" class="slider-bar"/>
-    </section>
-    <main>
-        <section class="main-header">
-            <figure>
-                <img src="" alt="Image of the character">
-                <figcaption>
-                    <h3>About me</h3>
-                    <p>Some text about somebody of us depends on which character is chosen</p>
-                </figcaption>
-            </figure>
-        </section>
-        <section class="main-projects">
-            <h3>My projects</h3>
-            <div class="main-projects-grid">
-                <div class="card">project01</div>
-                <div class="card">project02</div>
-                <div class="card">project03</div>
-                <div class="card">project04</div>
-                <div class="card">project05</div>
-                <div class="card">project06</div>
+  <!-- Navbar -->
+  <header>
+    <nav class="top-navbar container">
+      <div class="nav-brand">
+        <img src="./images/weboholics-logo-01.png" alt="WEBOHOLICS">
+      </div>
+      <div class="menu">
+        <a href="#hero">Home</a>
+        <a href="#about-us">About Us</a>
+        <a href="#services">Services</a>
+        <a href="#team">Team</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#contact">Contact Us</a>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="container">
+      <div class="hero-text">
+        <h1 class="hero-text-title"> We are the solution to your business growth</h1>
+        <button class="hero-text-button"> Get Started </button>
+      </div>
+      <div class="hero-image">
+        <img src="./images/intro-img.svg" alt="Intro Image">
+      </div>
+    </div>
+  </section>
+
+  <!-- About us -->
+  <section id="about-us" class="about-us container">
+    <div class="about-us-image">
+      <img src="./images/about-img.jpg" alt="About Us Image">
+    </div>
+    <div class="about-us-text">
+      <h2 class="about-us-text-title"> About Us </h2>
+      <h3 class="about-us-text-subtitle"> This is not our job, This is our passion </h3>
+      <p class="about-us-text-description">
+        Weboholics is a web development agency dedicated to providing high-quality, custom web solutions to businesses of all sizes. With a team of experienced developers, 
+        designers, and project managers, we take pride in our ability to deliver innovative, user-friendly websites that not only look great but also achieve their intended purpose.
+        <br><br>
+        We understand that every business is unique, which is why we take a personalized approach to each project. Our team works closely with clients to understand their 
+        goals and develop tailored solutions that align with their brand, values, and objectives.
+        <br><br>
+        Whether you need a simple website or a complex web application, we have the expertise to deliver results that exceed your expectations. At Weboholics, we are 
+        passionate about helping businesses succeed online and we strive to provide exceptional service, from the initial consultation to the final launch and beyond.
+        <br><br>
+        We 
+        <ul>
+          <li> <i class="ion-android-checkmark-circle"></i> Experienced developers, designers, project managers. </li>
+          <li> <i class="ion-android-checkmark-circle"></i> Tailored solutions to every business needs. </li>
+          <li> <i class="ion-android-checkmark-circle"></i> Multiple products and services. </li>
+        </ul>
+      </p>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services">
+    <div class="container">
+      <div class="services-header">
+        <h2 class="services-title"> Our Services </h2>
+        <p class="services-description"> At Weboholics, we are committed to delivering high-quality web solutions that help businesses achieve their goals and stand out in their respective industries. </p>
+      </div>
+      <div class="services-container">
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M160 368L32 256l128-112M352 368l128-112-128-112M304 96l-96 320"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> Custom Web Development </a></h4>
+          <p class="service-description">
+            We develop custom websites and web applications tailored to the unique needs of each business. Our developers use the latest technologies and best practices to ensure high-quality, secure, and scalable solutions.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M448 448V240M64 240v208M382.47 48H129.53c-21.79 0-41.47 12-49.93 30.46L36.3 173c-14.58 31.81 9.63 67.85 47.19 69h2c31.4 0 56.85-25.18 56.85-52.23 0 27 25.46 52.23 56.86 52.23s56.8-23.38 56.8-52.23c0 27 25.45 52.23 56.85 52.23s56.86-23.38 56.86-52.23c0 28.85 25.45 52.23 56.85 52.23h1.95c37.56-1.17 61.77-37.21 47.19-69l-43.3-94.54C423.94 60 404.26 48 382.47 48zM32 464h448M136 288h80a24 24 0 0124 24v88h0-128 0v-88a24 24 0 0124-24zM288 464V312a24 24 0 0124-24h64a24 24 0 0124 24v152"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> E-commerce Development </a></h4>
+          <p class="service-description">
+            We specialize in building e-commerce websites that provide a seamless user experience and drive sales. Our team can integrate popular payment gateways, shipping providers, and other features to help businesses sell their products online.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M48 336v96a48.14 48.14 0 0048 48h320a48.14 48.14 0 0048-48v-96" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 336h144M320 336h144M192 336a64 64 0 00128 0"/><path d="M384 32H128c-26 0-43 14-48 40L48 192v96a48.14 48.14 0 0048 48h320a48.14 48.14 0 0048-48v-96L432 72c-5-27-23-40-48-40z" fill="none" stroke="currentColor" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32" d="M48 192h144M320 192h144M192 192a64 64 0 00128 0"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> Content Management Systems </a></h4>
+          <p class="service-description">
+            We develop custom CMS solutions that allow businesses to manage their website content and update it easily without the need for technical expertise.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M430.11 347.9c-6.6-6.1-16.3-7.6-24.6-9-11.5-1.9-15.9-4-22.6-10-14.3-12.7-14.3-31.1 0-43.8l30.3-26.9c46.4-41 46.4-108.2 0-149.2-34.2-30.1-80.1-45-127.8-45-55.7 0-113.9 20.3-158.8 60.1-83.5 73.8-83.5 194.7 0 268.5 41.5 36.7 97.5 55 152.9 55.4h1.7c55.4 0 110-17.9 148.8-52.4 14.4-12.7 11.99-36.6.1-47.7z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><circle cx="144" cy="208" r="32"/><circle cx="152" cy="311" r="32"/><circle cx="224" cy="144" r="32"/><circle cx="256" cy="367" r="48"/><circle cx="328" cy="144" r="32"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> Responsive Web Design </a></h4>
+          <p class="service-description">
+            We design websites that look great and function flawlessly on all devices, from desktops to mobile phones.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 208-93.13 208-208S370.87 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M256 48c-58.07 0-112.67 93.13-112.67 208S197.93 464 256 464s112.67-93.13 112.67-208S314.07 48 256 48z" fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32"/><path d="M117.33 117.33c38.24 27.15 86.38 43.34 138.67 43.34s100.43-16.19 138.67-43.34M394.67 394.67c-38.24-27.15-86.38-43.34-138.67-43.34s-100.43 16.19-138.67 43.34" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path fill="none" stroke="currentColor" stroke-miterlimit="10" stroke-width="32" d="M256 48v416M464 256H48"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> Search Engine Optimization </a></h4>
+          <p class="service-description">
+            We can optimize your website to improve your search engine rankings and drive more traffic to your site.
+          </p>
+        </div>
+        <div class="service">
+          <div class="service-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" class="ionicon" viewBox="0 0 512 512"><path d="M436.67 184.11a27.17 27.17 0 01-38.3 0l-22.48-22.49a27.15 27.15 0 010-38.29l50.89-50.89a.85.85 0 00-.26-1.38C393.68 57 351.09 64.15 324.05 91c-25.88 25.69-27.35 64.27-17.87 98a27 27 0 01-7.67 27.14l-173 160.76a40.76 40.76 0 1057.57 57.54l162.15-173.3a27 27 0 0126.77-7.7c33.46 8.94 71.49 7.26 97.07-17.94 27.49-27.08 33.42-74.94 20.1-102.33a.85.85 0 00-1.36-.22z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="32"/><path d="M224 284c-17.48-17-25.49-24.91-31-30.29a18.24 18.24 0 01-3.33-21.35 20.76 20.76 0 013.5-4.62l15.68-15.29a18.66 18.66 0 015.63-3.87 18.11 18.11 0 0120 3.62c5.45 5.29 15.43 15 33.41 32.52M317.07 291.3c40.95 38.1 90.62 83.27 110 99.41a13.46 13.46 0 01.94 19.92L394.63 444a14 14 0 01-20.29-.76c-16.53-19.18-61.09-67.11-99.27-107" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/><path d="M17.34 193.5l29.41-28.74a4.71 4.71 0 013.41-1.35 4.85 4.85 0 013.41 1.35h0a9.86 9.86 0 008.19 2.77c3.83-.42 7.92-1.6 10.57-4.12 6-5.8-.94-17.23 4.34-24.54a207 207 0 0119.78-22.6c6-5.88 29.84-28.32 69.9-44.45A107.31 107.31 0 01206.67 64c22.59 0 40 10 46.26 15.67a89.54 89.54 0 0110.28 11.64 78.92 78.92 0 00-9.21-2.77 68.82 68.82 0 00-20-1.26c-13.33 1.09-29.41 7.26-38 14-13.9 11-19.87 25.72-20.81 44.71-.68 14.12 2.72 22.1 36.1 55.49a6.6 6.6 0 01-.34 9.16l-18.22 18a6.88 6.88 0 01-9.54.09c-21.94-21.94-36.65-33.09-45-38.16s-15.07-6.5-18.3-6.85a30.85 30.85 0 00-18.27 3.87 11.39 11.39 0 00-2.64 2 14.14 14.14 0 00.42 20.08l1.71 1.6a4.63 4.63 0 010 6.64L71.73 246.6a4.71 4.71 0 01-3.41 1.4 4.86 4.86 0 01-3.41-1.35l-47.57-46.43a4.88 4.88 0 010-6.72z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="32"/></svg>
+          </div>
+          <h4 class="service-title"><a href=""> Website Maintenance and Support </a></h4>
+          <p class="service-description">
+            We offer ongoing website maintenance and support services to ensure that your website stays up-to-date, secure, and performs well over time.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Call to Action -->
+  <section class="cta" id="cta">
+    <div class="container">
+      <div class="cta-section-text"> 
+        <h2 class="cta-section-text-title"> Let's Get Started  </h2>
+        <p class="cta-section-text-description">
+          Let us help grow your business and take it to the next level.
+        </p>
+      </div>
+      <div class="cta-section-button">
+        <button> Start Now </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team -->
+  <section id="team" class="team">
+    <div class="container">
+      <div class="team-header">
+        <h2 class="team-title"> Our Team </h2>
+        <p class="team-description"> At Weboholics, we have a team of experienced professionals with expertise in various areas of web development and design. </p>
+      </div>
+      <div class="team-container">
+        <div class="team-member">
+          <img src="./images/team-1.jpg" alt="Walter White" class="team-member-image">
+          <div class="team-member-info">
+            <h4 class="team-member-name"> Ben Bryan </h4>
+            <p class="team-member-position"> CEO </p>
+            <div class="team-member-social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
             </div>
-        </section>
-        <section class="footer">
-            <h2>Lets get in touch</h2>
-            <h3>You can contact me via:</h3>
-            <p>Email</p>
-        </section>
-    </main>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="./images/team-1.jpg" alt="Walter White" class="team-member-image">
+          <div class="team-member-info">
+            <h4 class="team-member-name"> Maria Shavora </h4>
+            <p class="team-member-position"> CEO </p>
+            <div class="team-member-social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="./images/team-1.jpg" alt="Walter White" class="team-member-image">
+          <div class="team-member-info">
+            <h4 class="team-member-name"> Premek </h4>
+            <p class="team-member-position"> CEO </p>
+            <div class="team-member-social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+        <div class="team-member">
+          <img src="./images/team-1.jpg" alt="Walter White" class="team-member-image">
+          <div class="team-member-info">
+            <h4 class="team-member-name"> Chadi Koberssy </h4>
+            <p class="team-member-position"> CEO </p>
+            <div class="team-member-social">
+              <a href=""><i class="fa fa-twitter"></i></a>
+              <a href=""><i class="fa fa-facebook"></i></a>
+              <a href=""><i class="fa fa-google-plus"></i></a>
+              <a href=""><i class="fa fa-linkedin"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Portfolio -->
+  <section id="portfolio" class="portfolio">
+    <div class="container">
+      <h2 class="portfolio-title"> Portfolio </h2>
+      <div class="portfolio-container">
+        <!-- Make it as you wish -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Us -->
+  <footer id="footer" class="footer">
+    <div class="container footer-content">
+      <div class="left-footer">
+        <div class="footer-description">
+          WEBOHOLICS
+          <p>
+            Weboholics is a team of passionate web developers and designers who are committed to delivering innovative and effective web solutions to businesses of all sizes. With years of experience 
+            and expertise in various areas of web development, we strive to provide exceptional service and exceed our clients' expectations.
+          </p>
+        </div>
+        <div class="useful-links">
+          <h4> Useful Links </h4>
+          <a href="#hero">Home</a>
+          <a href="#about-us">About Us</a>
+          <a href="#services">Services</a>
+          <a href="#team">Team</a>
+          <a href="#portfolio">Portfolio</a>
+        </div>
+        <div class="newsletter">
+          <h4> Our Newsletter </h4>
+          <p> 
+            Subscribe to our daily newsletter to receive our latest updates and news !
+          </p>
+          <form action="" method="get">
+            <input type="email" name="email-newsletter">
+            <button type="submit"> Subscribe </button>
+          </form>
+        </div>
+        <div class="contact-info">
+          <h4> Contact Us </h4>
+          <p>
+            A108 Adam Street
+            <br>
+            New York, NY 535022
+            <br>
+            United States
+            <br>
+            Phone: +1 5589 55488 55
+            <br>
+            Email: info@weboholics.com
+          </p>
+          <div class="social-links">
+            <a href="#" class="twitter"><i class="fa fa-twitter"></i></a>
+            <a href="#" class="facebook"><i class="fa fa-facebook"></i></a>
+            <a href="#" class="instagram"><i class="fa fa-instagram"></i></a>
+            <a href="#" class="linkedin"><i class="fa fa-linkedin"></i></a>
+          </div>
+        </div>
+      </div>
+      <div class="right-footer">
+        <h4> Send us a message </h4>
+        <p>
+          Reach out to us with your issue, your doubt ... anything on your mind.
+        </p>
+        <form action="" class="send-message-form" method="get">
+          <div class="form-group">
+            <input type="text" name="name" id="name" class="form-control" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="email" name="email" id="email" class="form-control" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <input type="text" name="subject" id="subject" class="form-control" placeholder="Subject">
+          </div>
+          <div class="form-group">
+            <textarea name="message" id="message" cols="30" rows="10" class="form-control" placeholder="Message"></textarea>
+          </div>
+          <button type="submit"> Send Message </button>
+        </form>
+      </div>
+    </div>
+  </footer>
 </body>
+
 </html>
