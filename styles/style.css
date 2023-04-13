@@ -1,5 +1,5 @@
 * {
-    border: 1px solid black;
+    font-family: 'Montserrat', sans-serif;
 }
 body, html {
     margin: 0;
@@ -7,12 +7,6 @@ body, html {
 }
 body {
     height: 100vh;
-    display: grid;
-    grid-template-columns: 260px 30px 1fr 1fr 1fr;
-    grid-template-rows: 0.2fr 3fr;
-    grid-template-areas: 
-    "sidebar slider header header header"
-    "sidebar slider main main main";
 }
 aside {
     grid-area: sidebar;
@@ -47,3 +41,11 @@ div.main-projects-grid {
     padding: 90px;
     text-align: center;
 }
+
+/*
+Color Palette:
+dark blue: #413e66;
+blue: #1bb1dc;
+very light blue: #f5f8fd;
+white: #ffffff;
+*/
