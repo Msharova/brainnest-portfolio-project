@@ -1,44 +1,83 @@
 section.team {
-    background-color: var(--very-light-blue);
-    padding: 75px;
-    text-align: center;
+  background-color: var(--very-light-blue);
+  padding: 75px 0;
+  text-align: center;
 }
 h2.team-title {
-    color: var(--dark-violet);
-    margin-bottom: 15px;
+  color: var(--dark-blue);
+  margin-bottom: 15px;
 }
 p.team-description {
-    color: var(--light-violet);
-    margin-bottom: 50px;
-    font-size: clamp(10px, 19px, 20px);
+  color: var(--dark-blue);
+  margin-bottom: 50px;
+  font-size: clamp(10px, 19px, 20px);
 }
-div.team-container {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+.team-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
 }
+
+.team-member {
+  position: relative;
+  max-width: 280px;
+  max-height: 280px;
+  color: var(--white);
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.team-member:hover > .team-member-info {
+  bottom: 0;
+}
+
 .team-member-image {
-    max-width: 280px;
-    aspect-ratio: 1/1;
+  aspect-ratio: 1/1;
+  height: 100%;
 }
 .team-member-info {
-    text-align: center;
+  text-align: center;
+  position: absolute;
+  padding: 15px 0;
+  bottom: -35px;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  background: rgba(29, 28, 41, 0.6);
+  transition: all ease-in-out 300ms;
 }
 div.team-member-social {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  padding: 0 60px;
+  color: var(--white);
 }
-div.team-member-social a:hover {
-transform: scale(1.2);
-transition: all 150ms ease-in-out;
+
+.team-member-name,
+.team-member-position {
+  margin-bottom: 10px;
 }
-div.team-member-text {
-    margin: 0 auto;
-    text-align: center; 
-    max-width: 280px;
+
+.team-member-social > a {
+  transition: all ease-in-out 200ms;
 }
-@media (max-width: 1300px) {
-    div.team-container {
-    grid-template-columns: 1fr 1fr;
+
+.team-member-social > a > i {
+  color: var(--white);
 }
+
+.team-member-social a:hover {
+  transform: scale(1.2);
+  transition: all 150ms ease-in-out;
+}
+.team-member-text {
+  margin: 0 auto;
+  text-align: center;
+  max-width: 280px;
+}
+@media only screen and (max-width: 1300px) {
+  .team-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
 }

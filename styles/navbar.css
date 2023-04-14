@@ -5,6 +5,7 @@
   left: 0;
   right: 0;
   transition: all ease-in-out 300ms;
+  z-index: 99;
 }
 
 .navbar-content {
