@@ -1,0 +1,29 @@
+.cta {
+    background-color: var(--dark-blue);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.cta-section-text > h2, p {
+    color: var(--white);
+    padding-bottom: 1rem;
+}
+
+
+.cta-section-button > button {
+    background-color: var(--dark-blue);
+    border: 2px solid var(--white);
+    font-size: 0.8125rem;
+    color: var(--white);
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 10px 32px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all ease-in-out 200ms;
+  }
+  
+  .cta-section-button > button:hover {
+    background-color: #0a98c0;
+  }
