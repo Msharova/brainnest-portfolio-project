@@ -1,0 +1,35 @@
+.about-us {
+    padding-top: 100px;
+    padding-bottom: 100px;
+    max-width: 1000px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 50px;
+}
+.about-us img {
+    max-width: 350px;
+    border: 8px solid white;
+}
+h2.about-us-text-title {
+    color: #443f86;
+    margin-bottom: 15px;
+    font-weight: 900;
+}
+h3.about-us-text-subtitle {
+    color: #453f96;
+    margin-bottom: 15px;
+    font-weight: 500;
+}
+p.about-us-text-description {
+    line-height: 1.5;
+}
+div.about-us-text ul {
+    list-style: none;
+    padding: 0;
+}
+div.about-us-text li {
+    margin-bottom: 15px;
+} 
+i {
+    color: #1ab1dc;
+}
