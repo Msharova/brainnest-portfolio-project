@@ -4,7 +4,7 @@
     padding-bottom: 2rem;
 }
 
-.cta-section-text > h2, p {
+.cta-section-text  {
     color: var(--white);
     padding-bottom: 1rem;
 }
