@@ -11,12 +11,12 @@
     border: 8px solid white;
 }
 h2.about-us-text-title {
-    color: #443f86;
+    color: var(--dark-violet);
     margin-bottom: 15px;
     font-weight: 900;
 }
 h3.about-us-text-subtitle {
-    color: #453f96;
+    color: var(--light-violet);
     margin-bottom: 15px;
     font-weight: 500;
 }
@@ -31,5 +31,5 @@ div.about-us-text li {
     margin-bottom: 15px;
 } 
 i {
-    color: #1ab1dc;
+    color: var(--blue);
 }
