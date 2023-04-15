@@ -4,12 +4,6 @@
   padding-bottom: 30px;
 }
 
-/* .footer-content {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 100px;
-} */
-
 .footer-content {
   display: flex;
   flex-wrap: wrap;
