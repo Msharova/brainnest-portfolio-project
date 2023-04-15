@@ -1,9 +1,7 @@
 .services-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 2rem;
-    padding-left: 5rem;
-    padding-right: 5rem;
   }
   
   .services > .container {
@@ -19,7 +17,8 @@
   }
   
   .services-description {
-    padding: 2rem 10rem 2rem 10rem ;
+   padding-top: 2rem;
+   padding-bottom: 2rem;
   }
   
   .service {
