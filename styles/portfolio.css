@@ -29,6 +29,7 @@ div.portfolio-pictures {
 }
 div.portfolio-pictures img {
     max-width: 300px;
+    margin: auto;
 }
 div.portfolio-pictures img:hover {
     transform: scale(1.05);
