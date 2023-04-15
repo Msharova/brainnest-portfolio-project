@@ -6,7 +6,6 @@
     padding: 2rem;
 }
 
-
 .cta {
     background-color: var(--dark-blue);
     padding-top: 2rem;
@@ -40,7 +39,6 @@
   .cta-section-button > button:hover {
     background-color: var(--very-light-blue);
     color: var(--dark-blue);
-
   }
 
   @media (max-width: 768px) {
