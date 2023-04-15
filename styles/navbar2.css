@@ -1,19 +1,12 @@
-/* ............/navbar/............ *
-
-/* desktop mode............/// */
-
 .navbar input[type="checkbox"],
 .navbar .hamburger-lines {
   display: none;
 }
 
 .navbar {
-  /* box-shadow: 0px 5px 10px 0px #aaa; */
   position: fixed;
   width: 100%;
-  /* background: #fff; */
   color: #000;
-  /* height: 50px; */
   z-index: 12;
   padding: 20px 0;
   transition: all ease-in-out 300ms;
@@ -27,7 +20,6 @@
 .navbar-container {
   display: flex;
   justify-content: space-between;
-  /* height: 64px; */
   align-items: center;
 }
 
@@ -38,8 +30,6 @@
 
 .menu-items li {
   list-style: none;
-  /* margin-left: 1.5rem; */
-  /* margin-bottom: 0.5rem; */
   font-size: 1.2rem;
 }
 
@@ -62,9 +52,6 @@
   margin-bottom: 0.5rem;
   max-width: 150px;
 }
-
-
-/* ......../ media query /.......... */
 
 @media (max-width: 768px) {
   .navbar {
@@ -144,12 +131,6 @@
     z-index: 13;
   }
 
-  /* .navbar .menu-items li {
-    margin-bottom: 1.5rem;
-    font-size: 1.3rem;
-    font-weight: 500;
-  } */
-
   .logo {
     z-index: -1;
     max-width: 100px;
@@ -184,11 +165,5 @@
     right: 15px;
     font-size: 3rem;
   }
-
-  /* .navbar .menu-items li {
-    margin-bottom: 2.5rem;
-    font-size: 1.8rem;
-    font-weight: 500;
-  } */
 }
 
